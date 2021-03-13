@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="banner">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="info-card">
+      <div class="pricing">
+        <button type="button"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+      </div>
+      <div class="form">
+        <div class="form-control f-name">
+          <input type="text" name="f-name" id="fname" placeholder="First Name">
+          <img src="/images/icon-error.svg" alt="error">
+          <small class="warning show">First name cannot be empty</small>
+        </div>
+        <div class="form-control l-name">
+          <input type="text" name="l-name" id="lname" placeholder="Last Name">
+          <img src="/images/icon-error.svg" alt="error">
+          <small class="warning">Last name cannot be empty</small>
+        </div>
+        <div class="form-control email">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <img src="/images/icon-error.svg" alt="error">
+          <small class="warning">Email cannot be empty</small>
+        </div>
+        <div class="form-control password">
+          <input type="password" name="password" id="password" placeholder="Password">
+          <img src="/images/icon-error.svg" alt="error">
+          <small class="warning">Password cannot be empty</small>
+        </div>
+        <button id = "claim-button" type="button">Claim your free trial</button>
+        <small>By clicking the button, you are agreeing to our <span>Terms and Services</span></small>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

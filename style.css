@@ -1,0 +1,186 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dkblue: hsl(249, 10%, 26%);
+    --grayblue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: var(--red);
+    background-image: url(./images/bg-intro-desktop.png);
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 0 100px 0 100px;
+    padding:20px;
+}
+
+.banner {
+    flex: 1;
+    margin-left: 50px;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 30px
+}
+
+.info-card {
+    flex: 1;
+    margin-left: 50px;
+}
+
+.form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, .1);
+}
+
+.info-card .pricing button{
+    background-color: var(--blue);
+    padding: 20px;
+    width: 100%;
+    color: white;
+    margin: 20px 0;
+    border: 1px solid var(--blue);
+    border-radius:10px;
+    font-size: 15px;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    outline: none;
+}
+
+.info-card .pricing button span {
+    font-weight: bold;
+}
+
+.info-card button:active {
+    transform: translateY(1px);
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid var(--grayblue);
+    outline: none;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.form-control img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 15px;
+    bottom: 35px;
+    display: none;
+}
+
+/* .form-control input[type ="email"]::placeholder {
+    color: var(--c, grey)
+} */
+
+
+.form-control .warning {
+    text-align: right;
+    color: var(--red);
+    font-style: italic;
+    display: none;
+}
+
+
+.form button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--green);
+    color: white;
+    outline: none;
+    border: 1px solid var(--green);
+    margin: 20px;
+    box-shadow: 0px 5px 0px 0px rgba(56,204,140,.1);
+}
+
+.form button:active {
+    transform: translateY(1px);
+}
+
+.form small {
+    text-align: center;
+    color: var(--grayblue)
+}
+
+.form small span{
+    color: var(--red);
+    font-weight: bold
+}
+
+
+@media (max-width: 850px) {
+    .body {
+        padding-bottom: 100px;
+    }
+    
+    .container {
+        flex-direction: column;
+        margin: 50px;
+        
+    }
+
+    .banner {
+        flex: 1;
+        color: white;
+        margin: 0;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 20px
+    }
+
+    .banner p {
+        text-align: center;
+        margin-bottom: 35px;
+        line-height: 2;
+    }
+    .info-card {
+        flex: 1;
+        margin: 0;
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
+
+}
